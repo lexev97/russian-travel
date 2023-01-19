@@ -1,4 +1,4 @@
-.place__text-paragraph {
+.place__paragraph {
   color: white;
   margin: 0;
   font-style: normal;
@@ -7,19 +7,16 @@
   line-height: 163%;
 }
 
-
-
 @media screen and (max-width: 1023px) {
-  .places {
+  .place__paragraph {
     font-size: 16px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .place__text-paragraph {
+  .place__paragraph {
     padding: 0 16px;
     flex-direction: column;
     gap: 32px;
   }
 }
-

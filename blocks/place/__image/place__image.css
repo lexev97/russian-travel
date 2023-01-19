@@ -1,4 +1,11 @@
 .place__image {
-    width: 100%;
-    padding-bottom: 100%;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.place__image img {
+  width: 100%;
+  height: 100%;
 }

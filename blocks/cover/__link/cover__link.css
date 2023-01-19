@@ -1,17 +1,51 @@
 .cover__link {
-  position: absolute;
+  position: relative;
+  cursor: pointer;
   width: 100%;
-  height: 100%;
+  min-height: 740px;
   display: flex;
+  object-fit: cover;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 32px;
   text-decoration: none;
+  background-image: url(../../../images/depo.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.cover__link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(42, 44, 47, 0.3);
+}
+
+.cover__link:hover::before {
+  background-color: rgba(42, 44, 47, 0.8);
+  z-index: 1;
+}
+
+@media screen and (max-width: 1279px) {
+  .cover__link {
+    min-height: 640px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .cover__link {
+    min-height: 480px;
+  }
 }
 
 @media screen and (max-width: 767px) {
   .cover__link {
     gap: 16px;
+    min-height: 200px;
   }
 }
