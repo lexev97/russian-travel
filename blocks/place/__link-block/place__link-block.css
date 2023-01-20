@@ -1,7 +1,6 @@
 .place__link-block {
   display: flex;
-  width: 100%;
-  flex-grow: 1;
+  max-width: 100%;
   flex-direction: column;
   justify-content: flex-end;
-}
+  flex-grow: 1;

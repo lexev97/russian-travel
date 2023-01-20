@@ -24,6 +24,7 @@
   left: 0;
   bottom: 0;
   background-color: rgba(42, 44, 47, 0.3);
+  transition: all 0.3s ease;
 }
 
 .cover__link:hover::before {

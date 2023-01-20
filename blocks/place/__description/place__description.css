@@ -1,11 +1,17 @@
 .place__description {
   display: flex;
-  gap: 30px;
+  gap: 40px;
+}
+
+@media screen and (max-width: 1279px) {
+  .place__description {
+    gap: 32px;
+  }
 }
 
 @media screen and (max-width: 1023px) {
   .place__description {
-    gap: 29px;
+    gap: 28px;
   }
 }
 
